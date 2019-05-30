@@ -19,3 +19,12 @@ func TestCase2(t *testing.T) {
 		t.Errorf("Data was incorrect, input %v, got \"%v\", want \"%v\"", input, got, want)
 	}
 }
+
+func TestCase3(t *testing.T) {
+	input := []float64{99, 2, 6, 34, 52, 10}
+	want := 43.0
+	got := FindMedian(input)
+	if got != want {
+		t.Errorf("Data was incorrect, input %v, got \"%v\", want \"%v\"", input, got, want)
+	}
+}
