@@ -2,7 +2,7 @@ package medianunsort
 
 import "testing"
 
-func TestCast1(t *testing.T) {
+func TestCase1(t *testing.T) {
 	input := []float64{1, 3, 3, 6, 7, 8, 9}
 	want := 6.0
 	got := FindMedian(input)
@@ -11,7 +11,7 @@ func TestCast1(t *testing.T) {
 	}
 }
 
-func TestCast2(t *testing.T) {
+func TestCase2(t *testing.T) {
 	input := []float64{1, 2, 3, 4, 5, 6, 8, 9}
 	want := 4.5
 	got := FindMedian(input)
