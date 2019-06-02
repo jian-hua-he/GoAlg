@@ -5,7 +5,7 @@ import "testing"
 func TestCase1(t *testing.T) {
 	input := []interface{}{7, 1, 8, 6, 4, 3, 2, 5, 9}
 	got := Sort(input, func(a interface{}, b interface{}) bool {
-		return a.(int) > b.(int)
+		return a.(int) < b.(int)
 	})
 	want := []interface{}{9, 8, 7, 6, 5, 4, 3, 2, 1}
 
@@ -25,7 +25,7 @@ func TestCase2(t *testing.T) {
 	got := Sort(input, func(a interface{}, b interface{}) bool {
 		return a.(int) > b.(int)
 	})
-	want := []interface{}{5, 4, 3, 2, 1}
+	want := []interface{}{1, 2, 3, 4, 5}
 
 	if len(got) != len(want) {
 		t.Errorf("Length of sort result should equal excepted result, got %v, want %v", len(got), len(want))
