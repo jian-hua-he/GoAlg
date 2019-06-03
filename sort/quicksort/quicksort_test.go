@@ -21,7 +21,7 @@ func TestCase1(t *testing.T) {
 }
 
 func TestCase2(t *testing.T) {
-	input := []interface{}{1, 4, 3, 2, 5}
+	input := []interface{}{1, 5, 3, 2, 4}
 	got := Sort(input, func(a interface{}, b interface{}) bool {
 		return a.(int) > b.(int)
 	})
