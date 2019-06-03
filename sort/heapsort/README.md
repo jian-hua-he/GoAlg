@@ -1,6 +1,5 @@
 # Heapsort
 
-
 Step of the Heapsort
 
 1. Build a heapify array
