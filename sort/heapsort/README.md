@@ -1,6 +1,6 @@
 # Heapsort
 
-Step of the Heapsort
+The steps of the Heapsort
 
 1. Build a heapify array
 2. Swap first element and last element in array

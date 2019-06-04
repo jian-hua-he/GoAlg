@@ -1,6 +1,6 @@
 # Quicksort
 
-Step of the Quicksort
+The steps of the Quicksort
 
 1. Determine pivot in array
 2. Given index i and j to Iterate array and compare pivot
