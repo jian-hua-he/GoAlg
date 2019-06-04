@@ -28,7 +28,7 @@ func merge(left []interface{}, right []interface{}, f func(interface{}, interfac
 
 	i, j := 0, 0
 	for i < len(left) && j < len(right) {
-		if f(left[i], right[j]) {
+		if f(right[j], left[i]) {
 			result = append(result, left[i])
 			i += 1
 		} else {
