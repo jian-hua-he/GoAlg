@@ -16,6 +16,10 @@ Consider an array contains the data with the format below:
         name: 'Fuzz',
         priority: 1,
     },
+    {
+        name: 'Buzz',
+        priority: 1,
+    },
 ]
 ```
 
@@ -29,7 +33,11 @@ Priority is higher if the number is lower. If there is the same priority number.
     },
     {
         name: 'Fuzz',
-        priority: 3,
+        priority: 1,
+    },
+    {
+        name: 'Buzz',
+        priority: 1,
     },
     {
         name: 'Bar',
