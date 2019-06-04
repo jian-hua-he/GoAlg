@@ -1,7 +1,6 @@
 package mergesort
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -35,11 +34,6 @@ func merge(left []interface{}, right []interface{}, f func(interface{}, interfac
 			result = append(result, right[j])
 			j += 1
 		}
-		fmt.Println("=====")
-		fmt.Printf("Result: %+v\n", result)
-		fmt.Printf("Left: %+v\n", i)
-		fmt.Printf("Right: %+v\n", j)
-		fmt.Println("=====")
 	}
 
 	result = append(result, left[i:]...)
