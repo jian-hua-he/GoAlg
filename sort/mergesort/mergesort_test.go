@@ -44,7 +44,7 @@ func TestMergeCase1(t *testing.T) {
 	left := []interface{}{1, 3, 4, 7}
 	right := []interface{}{2, 5, 6}
 	got := merge(left, right, func(l interface{}, r interface{}) bool {
-		return l.(int) < r.(int)
+		return l.(int) > r.(int)
 	})
 
 	want := []int{1, 2, 3, 4, 5, 6, 7}
@@ -59,7 +59,7 @@ func TestMergeCase2(t *testing.T) {
 	left := []interface{}{4, 2}
 	right := []interface{}{8, 7, 6, 5, 3, 1}
 	got := merge(left, right, func(l interface{}, r interface{}) bool {
-		return l.(int) > r.(int)
+		return l.(int) < r.(int)
 	})
 
 	want := []int{8, 7, 6, 5, 4, 3, 2, 1}
