@@ -2,7 +2,7 @@ package mergesort
 
 import "testing"
 
-// func TestCase1(t *testing.T) {
+// func TestSortCase1(t *testing.T) {
 // 	input := []interface{}{7, 1, 8, 6, 4, 3, 2, 5, 9}
 // 	got := Sort(input, func(a interface{}, b interface{}) bool {
 // 		return a.(int) < b.(int)
@@ -22,7 +22,7 @@ import "testing"
 // 	t.Logf("%v\n", got)
 // }
 
-// func TestCase2(t *testing.T) {
+// func TestSortCase2(t *testing.T) {
 // 	input := []interface{}{1, 5, 3, 2, 4}
 // 	got := Sort(input, func(a interface{}, b interface{}) bool {
 // 		return a.(int) > b.(int)
@@ -40,7 +40,7 @@ import "testing"
 // 	}
 // }
 
-func TestMerge(t *testing.T) {
+func TestMergeCase1(t *testing.T) {
 	left := []interface{}{1, 3, 4, 7}
 	right := []interface{}{2, 5, 6}
 	got := merge(left, right, func(l interface{}, r interface{}) bool {
@@ -53,6 +53,19 @@ func TestMerge(t *testing.T) {
 			t.Errorf("Data was incorrect, got \"%v\", want \"%v\"", got[i], want[i])
 		}
 	}
+}
 
-	t.Logf("%v\n", got)
+func TestMergeCase2(t *testing.T) {
+	left := []interface{}{4, 2}
+	right := []interface{}{8, 7, 6, 5, 3, 1}
+	got := merge(left, right, func(l interface{}, r interface{}) bool {
+		return l.(int) > r.(int)
+	})
+
+	want := []int{8, 7, 6, 5, 4, 3, 2, 1}
+	for i := 0; i < len(want); i += 1 {
+		if got[i] != want[i] {
+			t.Errorf("Data was incorrect, got \"%v\", want \"%v\"", got[i], want[i])
+		}
+	}
 }
