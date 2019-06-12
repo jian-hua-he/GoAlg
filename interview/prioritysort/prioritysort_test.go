@@ -3,7 +3,7 @@ package prioritysort
 import (
 	"testing"
 
-	"github.com/jian-hua-he/go-alg/sort/heapsort"
+	"go-alg/sort/heapsort"
 )
 
 type Item struct {
