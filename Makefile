@@ -15,7 +15,7 @@ go-version:
 
 .PHONY: go-test
 go-test:
-	$(BASE_COMMAND) bash -c "cd $(DOCKER_VOLUME_PATH) && go test ./..."
+	$(BASE_COMMAND) bash -c "cd $(DOCKER_VOLUME_PATH) && go test ./... --race"
 
 .PHONY: go-list
 go-list:
