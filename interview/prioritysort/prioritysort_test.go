@@ -2,8 +2,6 @@ package prioritysort
 
 import (
 	"testing"
-
-	"go-alg/sort/heapsort"
 )
 
 type Item struct {
@@ -31,7 +29,7 @@ func TestCase1(t *testing.T) {
 		},
 	}
 
-	result := heapsort.Sort(arr, func(a interface{}, b interface{}) bool {
+	result := Sort(arr, func(a interface{}, b interface{}) bool {
 		return a.(Item).Priority > b.(Item).Priority
 	})
 
