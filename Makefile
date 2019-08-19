@@ -1,6 +1,6 @@
 DOCKER_PORT ?= 80
 HOST_PORT ?= 6060
-DOCKER_IMAGE ?= golang:1.11-rc
+DOCKER_IMAGE ?= golang:1.12
 
 DOCKER_VOLUME_PATH = /go/src/go-alg
 BASE_COMMAND = docker run -it -v $(PWD):$(DOCKER_VOLUME_PATH) --rm -p $(HOST_PORT):$(DOCKER_PORT) $(DOCKER_IMAGE)
