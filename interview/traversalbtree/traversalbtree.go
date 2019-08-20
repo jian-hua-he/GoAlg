@@ -7,6 +7,10 @@ type BTree struct {
 }
 
 func solution(t *BTree) int {
+	if t == nil {
+		return 0
+	}
+
 	// result := recursion(t, t.Value, 0)
 	result := iterate(t, t.Value)
 	return result
