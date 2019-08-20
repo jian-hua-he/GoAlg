@@ -32,3 +32,21 @@ func TestCase2(t *testing.T) {
 		t.Errorf("Data was incorrect, got %#v, want %#v", got, want)
 	}
 }
+
+func TestCase3(t *testing.T) {
+	bt := &BTree{Value: 2}
+	got := solution(bt)
+	want := 1
+	if !reflect.DeepEqual(got, want) {
+		t.Errorf("Data was incorrect, got %#v, want %#v", got, want)
+	}
+}
+
+func TestCase4(t *testing.T) {
+	var bt *BTree = nil
+	got := solution(bt)
+	want := 0
+	if !reflect.DeepEqual(got, want) {
+		t.Errorf("Data was incorrect, got %#v, want %#v", got, want)
+	}
+}
