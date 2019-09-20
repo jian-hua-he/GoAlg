@@ -2,7 +2,7 @@
 
 ## Description
 
-generates the minimum amount of queries of given length.
+Generates the minimum amount of queries of given length.
 
 ```
 function generateQueries (keywords[], maxCharLength)
