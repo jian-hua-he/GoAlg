@@ -18,7 +18,7 @@ func TestCase1(t *testing.T) {
 
 func TestCase2(t *testing.T) {
 	keywords := []string{"foo", "fuzz", "bar", "buzz"}
-	maxLen := 6
+	maxLen := 10
 	want := []string{"foo OR bar", "fuzz", "buzz"}
 	got := generateQueries(keywords, maxLen)
 
