@@ -1,1 +1,1 @@
-docker run -it -v $(PWD):/go/src/operatorstr --rm golang:1.12 bash -c "cd /go/src/operatorstr && go test ./... --race"
+docker run -it -v $(PWD):/go/src/minquery --rm golang:1.12 bash -c "cd /go/src/minquery && go test ./... --race"
